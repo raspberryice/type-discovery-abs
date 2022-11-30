@@ -1,0 +1,11 @@
+data/
+scripts/
+checkpoints/
+wandb/
+*.ipynb
+__pycache__/
+*.pkl
+*.pdf 
+cache/* 
+ETypeClus/* 
+eval/**/*.json
