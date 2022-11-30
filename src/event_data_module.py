@@ -392,6 +392,7 @@ class OpenTypeEventDataModule(pl.LightningDataModule):
     
     @staticmethod 
     def _split_types_ace(dataset_dir: str, known_types: int) -> Tuple[List[InputExample], List[InputExample]]:
+        #TODO: change the path of ACE input files if needed 
         file_names = ['pro_mttrig_id/json/train.oneie.json','pro_mttrig_id/json/dev.oneie.json','pro_mttrig_id/json/test.oneie.json']
      
 
