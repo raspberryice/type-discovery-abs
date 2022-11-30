@@ -1,0 +1,25 @@
+---
+model: "vqvae"
+task: "event"
+# data related 
+known_types: 10
+unknown_types: 23
+dataset_name: "ace"
+dataset_dir: "data/ace"
+test_ratio: 0.3
+# model related 
+model_type: "bert"
+model_name_or_path: "bert-base-uncased"
+cache_dir: "./cache"
+beta: 1.0
+gamma: 0.0
+hybrid: true # hybrid vqvae + vae 
+recon_loss: 0.0
+num_train_epochs: 15
+num_pretrain_epochs: 0
+train_batch_size: 32 
+accumulate_grad_batches: 1 
+num_workers: 2 
+eval_batch_size: 32 
+learning_rate: 3e-5 
+

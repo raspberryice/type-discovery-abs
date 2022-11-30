@@ -1,0 +1,24 @@
+---
+model: "tabs"
+task: "event"
+# data 
+known_types: 10 
+dataset_name: "ace"
+dataset_dir: "data/ace"
+test_ratio: 0.3 
+e2e: true
+# model 
+model_type: "bert"
+model_name_or_path: "bert-base-uncased"
+cache_dir: "./cache"
+supervised_pretrain: true
+label_smoothing_alpha: 0.1
+token_pooling: "first"
+hidden_dim: 256
+classifier_layers: 2
+# runtime 
+num_train_epochs: 3
+train_batch_size: 16
+accumulate_grad_batches: 2
+num_workers: 2 
+eval_batch_size: 3

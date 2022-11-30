@@ -1,0 +1,24 @@
+---
+model: "rocore"
+task: "rel"
+# data related 
+known_types: 64
+unknown_types: 16
+dataset_name: "fewrel"
+dataset_dir: "data/fewrel"
+test_ratio: 0.15
+# model
+feature: "all"
+hidden_dim: 512
+kmeans_dim: 256
+# runtime
+num_train_epochs: 100
+num_pretrain_epochs: 10
+train_batch_size: 100
+num_workers: 4
+eval_batch_size: 100
+learning_rate: 1e-4 
+center_loss: 0.005
+sigmoid: 2.0
+layer: 8
+

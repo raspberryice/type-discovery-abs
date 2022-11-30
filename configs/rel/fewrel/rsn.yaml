@@ -1,0 +1,22 @@
+---
+model: "rsn"
+task: "rel"
+# data related 
+known_types: 64
+unknown_types: 16
+dataset_name: "fewrel"
+dataset_dir: "data/fewrel"
+test_ratio: 0.15
+# model 
+feature: "all"
+hidden_dim: 512
+perturb_scale: 0.02 
+vat_loss_weight: 1.0
+p_cond: 0.03 
+# runtime 
+num_train_epochs: 20
+num_pretrain_epochs: 0
+train_batch_size: 16
+accumulate_grad_batches: 2 
+num_workers: 2 
+eval_batch_size: 32 
